@@ -1,0 +1,15 @@
+/* 
+  Localizable.strings
+  yandexTestApp
+
+  Created by Evgeny Gabelev on 01/12/2018.
+  Copyright © 2018 Evgeny Gabelev. All rights reserved.
+*/
+
+
+"restaurantSearchButtonLabelText" = "Найти\nресторан";
+"parameterButtonTitle" = "Параметры";
+"sdWebImageTitle" = "SDWebImage";
+"kingfisherTitle" = "Kingfisher";
+"nukeTitle" = "Nuke";
+"frameworkLabelText" = "Выберите требуемый фреймворк:";

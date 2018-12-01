@@ -8,20 +8,47 @@
 
 /* Begin PBXBuildFile section */
 		B59708EB21B29A5000C12165 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B59708EA21B29A5000C12165 /* AppDelegate.swift */; };
-		B59708ED21B29A5000C12165 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B59708EC21B29A5000C12165 /* ViewController.swift */; };
-		B59708F021B29A5000C12165 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B59708EE21B29A5000C12165 /* Main.storyboard */; };
+		B59708ED21B29A5000C12165 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B59708EC21B29A5000C12165 /* MainViewController.swift */; };
 		B59708F221B29A5200C12165 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B59708F121B29A5200C12165 /* Assets.xcassets */; };
 		B59708F521B29A5200C12165 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B59708F321B29A5200C12165 /* LaunchScreen.storyboard */; };
+		B597090021B29B7E00C12165 /* LayoutExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = B59708FF21B29B7E00C12165 /* LayoutExtension.swift */; };
+		B597090221B29BB700C12165 /* AlertExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = B597090121B29BB700C12165 /* AlertExtension.swift */; };
+		B597090421B29BBE00C12165 /* ColorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = B597090321B29BBE00C12165 /* ColorExtension.swift */; };
+		B597090621B29F4900C12165 /* StackViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = B597090521B29F4900C12165 /* StackViewExtension.swift */; };
+		B597090921B2A0EE00C12165 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = B597090821B2A0EE00C12165 /* Constants.swift */; };
+		B597090E21B2A18000C12165 /* ParametersViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B597090D21B2A18000C12165 /* ParametersViewController.swift */; };
+		B597091021B2A2FA00C12165 /* LocalizationExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = B597090F21B2A2FA00C12165 /* LocalizationExtension.swift */; };
+		B597091421B2A6BF00C12165 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = B597091621B2A6BF00C12165 /* Localizable.strings */; };
+		B597091E21B2B1A300C12165 /* DLRadioButton.m in Sources */ = {isa = PBXBuildFile; fileRef = B597091C21B2B1A300C12165 /* DLRadioButton.m */; };
+		B597092021B2B2EB00C12165 /* DLRadioButtonExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = B597091F21B2B2EB00C12165 /* DLRadioButtonExtension.swift */; };
+		B597092221B2B56300C12165 /* UIViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = B597092121B2B56300C12165 /* UIViewExtension.swift */; };
+		B597092521B2B95500C12165 /* DataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = B597092421B2B95500C12165 /* DataService.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		B59708E721B29A5000C12165 /* yandexTestApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = yandexTestApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B59708EA21B29A5000C12165 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		B59708EC21B29A5000C12165 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		B59708EF21B29A5000C12165 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		B59708EC21B29A5000C12165 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		B59708F121B29A5200C12165 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B59708F421B29A5200C12165 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B59708F621B29A5200C12165 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B59708FF21B29B7E00C12165 /* LayoutExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LayoutExtension.swift; sourceTree = "<group>"; };
+		B597090121B29BB700C12165 /* AlertExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlertExtension.swift; sourceTree = "<group>"; };
+		B597090321B29BBE00C12165 /* ColorExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ColorExtension.swift; sourceTree = "<group>"; };
+		B597090521B29F4900C12165 /* StackViewExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StackViewExtension.swift; sourceTree = "<group>"; };
+		B597090821B2A0EE00C12165 /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		B597090D21B2A18000C12165 /* ParametersViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParametersViewController.swift; sourceTree = "<group>"; };
+		B597090F21B2A2FA00C12165 /* LocalizationExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalizationExtension.swift; sourceTree = "<group>"; };
+		B597091121B2A67800C12165 /* ru */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ru; path = ru.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
+		B597091521B2A6BF00C12165 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		B597091721B2A6C200C12165 /* ru */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ru; path = ru.lproj/Localizable.strings; sourceTree = "<group>"; };
+		B597091821B2A6CF00C12165 /* Base */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = Base; path = Base.lproj/Localizable.strings; sourceTree = "<group>"; };
+		B597091B21B2B1A200C12165 /* yandexTestApp-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "yandexTestApp-Bridging-Header.h"; sourceTree = "<group>"; };
+		B597091C21B2B1A300C12165 /* DLRadioButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DLRadioButton.m; sourceTree = "<group>"; };
+		B597091D21B2B1A300C12165 /* DLRadioButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DLRadioButton.h; sourceTree = "<group>"; };
+		B597091F21B2B2EB00C12165 /* DLRadioButtonExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DLRadioButtonExtension.swift; sourceTree = "<group>"; };
+		B597092121B2B56300C12165 /* UIViewExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIViewExtension.swift; sourceTree = "<group>"; };
+		B597092421B2B95500C12165 /* DataService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataService.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,14 +81,107 @@
 		B59708E921B29A5000C12165 /* yandexTestApp */ = {
 			isa = PBXGroup;
 			children = (
-				B59708EA21B29A5000C12165 /* AppDelegate.swift */,
-				B59708EC21B29A5000C12165 /* ViewController.swift */,
-				B59708EE21B29A5000C12165 /* Main.storyboard */,
+				B597092321B2B94200C12165 /* Services */,
+				B597091921B2B18200C12165 /* Helpers */,
+				B597090A21B2A14F00C12165 /* Screens */,
+				B597090721B2A0E300C12165 /* Constants */,
+				B59708FE21B29B5B00C12165 /* Extensions */,
 				B59708F121B29A5200C12165 /* Assets.xcassets */,
+				B59708EA21B29A5000C12165 /* AppDelegate.swift */,
 				B59708F321B29A5200C12165 /* LaunchScreen.storyboard */,
 				B59708F621B29A5200C12165 /* Info.plist */,
+				B597091621B2A6BF00C12165 /* Localizable.strings */,
 			);
 			path = yandexTestApp;
+			sourceTree = "<group>";
+		};
+		B59708FC21B29A7600C12165 /* Main Screen */ = {
+			isa = PBXGroup;
+			children = (
+				B59708FD21B29A9100C12165 /* Controller */,
+			);
+			path = "Main Screen";
+			sourceTree = "<group>";
+		};
+		B59708FD21B29A9100C12165 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				B59708EC21B29A5000C12165 /* MainViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		B59708FE21B29B5B00C12165 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				B597090121B29BB700C12165 /* AlertExtension.swift */,
+				B597090F21B2A2FA00C12165 /* LocalizationExtension.swift */,
+				B597090321B29BBE00C12165 /* ColorExtension.swift */,
+				B59708FF21B29B7E00C12165 /* LayoutExtension.swift */,
+				B597090521B29F4900C12165 /* StackViewExtension.swift */,
+				B597091F21B2B2EB00C12165 /* DLRadioButtonExtension.swift */,
+				B597092121B2B56300C12165 /* UIViewExtension.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		B597090721B2A0E300C12165 /* Constants */ = {
+			isa = PBXGroup;
+			children = (
+				B597090821B2A0EE00C12165 /* Constants.swift */,
+			);
+			path = Constants;
+			sourceTree = "<group>";
+		};
+		B597090A21B2A14F00C12165 /* Screens */ = {
+			isa = PBXGroup;
+			children = (
+				B597090B21B2A15B00C12165 /* Parameters Screen */,
+				B59708FC21B29A7600C12165 /* Main Screen */,
+			);
+			path = Screens;
+			sourceTree = "<group>";
+		};
+		B597090B21B2A15B00C12165 /* Parameters Screen */ = {
+			isa = PBXGroup;
+			children = (
+				B597090C21B2A16B00C12165 /* Controller */,
+			);
+			path = "Parameters Screen";
+			sourceTree = "<group>";
+		};
+		B597090C21B2A16B00C12165 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				B597090D21B2A18000C12165 /* ParametersViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		B597091921B2B18200C12165 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				B597091A21B2B18D00C12165 /* Radio Button */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		B597091A21B2B18D00C12165 /* Radio Button */ = {
+			isa = PBXGroup;
+			children = (
+				B597091D21B2B1A300C12165 /* DLRadioButton.h */,
+				B597091C21B2B1A300C12165 /* DLRadioButton.m */,
+				B597091B21B2B1A200C12165 /* yandexTestApp-Bridging-Header.h */,
+			);
+			path = "Radio Button";
+			sourceTree = "<group>";
+		};
+		B597092321B2B94200C12165 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				B597092421B2B95500C12165 /* DataService.swift */,
+			);
+			path = Services;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -96,6 +216,7 @@
 				TargetAttributes = {
 					B59708E621B29A5000C12165 = {
 						CreatedOnToolsVersion = 9.4.1;
+						LastSwiftMigration = 0940;
 					};
 				};
 			};
@@ -106,6 +227,7 @@
 			knownRegions = (
 				en,
 				Base,
+				ru,
 			);
 			mainGroup = B59708DE21B29A5000C12165;
 			productRefGroup = B59708E821B29A5000C12165 /* Products */;
@@ -123,8 +245,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				B59708F521B29A5200C12165 /* LaunchScreen.storyboard in Resources */,
+				B597091421B2A6BF00C12165 /* Localizable.strings in Resources */,
 				B59708F221B29A5200C12165 /* Assets.xcassets in Resources */,
-				B59708F021B29A5000C12165 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -135,28 +257,42 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B59708ED21B29A5000C12165 /* ViewController.swift in Sources */,
+				B597090221B29BB700C12165 /* AlertExtension.swift in Sources */,
+				B597092521B2B95500C12165 /* DataService.swift in Sources */,
+				B597091E21B2B1A300C12165 /* DLRadioButton.m in Sources */,
+				B597090021B29B7E00C12165 /* LayoutExtension.swift in Sources */,
+				B59708ED21B29A5000C12165 /* MainViewController.swift in Sources */,
+				B597091021B2A2FA00C12165 /* LocalizationExtension.swift in Sources */,
+				B597090621B29F4900C12165 /* StackViewExtension.swift in Sources */,
+				B597092221B2B56300C12165 /* UIViewExtension.swift in Sources */,
+				B597090E21B2A18000C12165 /* ParametersViewController.swift in Sources */,
+				B597092021B2B2EB00C12165 /* DLRadioButtonExtension.swift in Sources */,
+				B597090921B2A0EE00C12165 /* Constants.swift in Sources */,
 				B59708EB21B29A5000C12165 /* AppDelegate.swift in Sources */,
+				B597090421B29BBE00C12165 /* ColorExtension.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		B59708EE21B29A5000C12165 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				B59708EF21B29A5000C12165 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		B59708F321B29A5200C12165 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
 				B59708F421B29A5200C12165 /* Base */,
+				B597091121B2A67800C12165 /* ru */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		B597091621B2A6BF00C12165 /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B597091521B2A6BF00C12165 /* en */,
+				B597091721B2A6C200C12165 /* ru */,
+				B597091821B2A6CF00C12165 /* Base */,
+			);
+			name = Localizable.strings;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -166,6 +302,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
@@ -226,6 +363,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
@@ -280,6 +418,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 6H69AR2N7V;
 				INFOPLIST_FILE = yandexTestApp/Info.plist;
@@ -289,6 +428,8 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = evgenygabelev.yandexTestApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "yandexTestApp/Helpers/Radio Button/yandexTestApp-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -298,6 +439,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 6H69AR2N7V;
 				INFOPLIST_FILE = yandexTestApp/Info.plist;
@@ -307,6 +449,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = evgenygabelev.yandexTestApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "yandexTestApp/Helpers/Radio Button/yandexTestApp-Bridging-Header.h";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
