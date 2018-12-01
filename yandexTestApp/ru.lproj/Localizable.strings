@@ -13,3 +13,6 @@
 "kingfisherTitle" = "Kingfisher";
 "nukeTitle" = "Nuke";
 "frameworkLabelText" = "Выберите требуемый фреймворк:";
+"clearCacheButtonTitle" = "Oчистить кэш";
+"errorTitle" = "Ошибка";
+"unknownErrorMessage" = "Что то пошло не так.\nПожалуйста, попробуйте снова.";

@@ -7,6 +7,9 @@
 //
 
 import UIKit
+import SDWebImage
+import Kingfisher
+import Nuke
 
 class ParametersViewController: UIViewController {
     
@@ -37,6 +40,15 @@ class ParametersViewController: UIViewController {
         return checkBox
     }()
     
+    let clearCacheButton: UIButton = {
+        let button = UIButton()
+        button.setTitleLocalized("clearCacheButtonTitle", for: .normal)
+        button.setTitleColor(.clearCacheButtonColor, for: .normal)
+        button.setTitleColor(.clearCacheButtonColorHighlighted, for: .highlighted)
+        button.addTarget(self, action: #selector(clearCache), for: .touchUpInside)
+        return button
+    }()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         setupView()
@@ -58,7 +70,7 @@ class ParametersViewController: UIViewController {
         let checkBoxesStackView = view.createStackView(views: checkBoxes, axis: .vertical, distrubution: .equalSpacing, spacing: 0)
         checkBoxesStackView.alignment = .center
         
-        let mainViews = [frameworkLabel, checkBoxesStackView]
+        let mainViews = [frameworkLabel, checkBoxesStackView, clearCacheButton]
         let mainStackView = view.createStackView(views: mainViews, axis: .vertical, distrubution: .equalSpacing, spacing: 50)
         mainStackView.alignment = .center
         
@@ -71,6 +83,13 @@ class ParametersViewController: UIViewController {
         if let selectedFramework = sender.stringID {
             DataService.shared.selectedImageLoadingFramework = selectedFramework
         }
+    }
+    
+    @objc func clearCache() {
+        SDImageCache.shared().clearMemory()
+        KingfisherManager.shared.cache.clearDiskCache()
+        KingfisherManager.shared.cache.clearMemoryCache()
+        ImageCache.shared.removeAll()
     }
 
 }

@@ -16,6 +16,8 @@ extension UIColor {
     static let viewsBackgroundColor = UIColor(r: 255, g: 255, b: 255, a: 1)
     static let radioButtonTextColor = UIColor(r: 52, g: 52, b: 52, a: 1)
     static let radioButtonIconColor = UIColor(r: 52, g: 52, b: 52, a: 1)
+    static let clearCacheButtonColor = UIColor(r: 255, g: 0, b: 0, a: 1)
+    static let clearCacheButtonColorHighlighted = UIColor(r: 255, g: 0, b: 0, a: 0.5)
     convenience init(r: CGFloat, g: CGFloat, b: CGFloat, a: CGFloat) {
         self.init(red: r/255, green: g/255, blue: b/255, alpha: a)
     }

@@ -7,6 +7,9 @@
 //
 
 import UIKit
+import SDWebImage
+import Kingfisher
+import Nuke
 
 class RestaurantListViewController: UIViewController,
                                     UITableViewDelegate,
@@ -48,6 +51,24 @@ class RestaurantListViewController: UIViewController,
         let cell = tableView.dequeueReusableCell(withIdentifier: restaurantListTableViewCellID, for: indexPath) as! RestaurantListTableViewCell
         cell.restaurantNameLabel.text = restaurantList[indexPath.row].place.name
         cell.restaurantDescriptionLabel.text = restaurantList[indexPath.row].place.description
+        guard let imageUrl = URL(string: restaurantList[indexPath.row].place.picture.url ?? "") else {return cell}
+        let placeholderImage = UIImage(named: "noImage")
+        switch DataService.shared.selectedImageLoadingFramework {
+        case ImageLoadingFramework.SDWebImage:
+            cell.restaurantImageView.sd_setImage(with: imageUrl, placeholderImage: placeholderImage)
+        case ImageLoadingFramework.Kingfisher:
+            cell.restaurantImageView.kf.setImage(with: imageUrl, placeholder: placeholderImage)
+        case ImageLoadingFramework.Nuke:
+            Nuke.loadImage(
+                with: imageUrl,
+                options: ImageLoadingOptions(
+                    placeholder: placeholderImage
+                ),
+                into: cell.restaurantImageView
+            )
+        default:
+            break
+        }
         
         return cell
     }
@@ -70,6 +91,20 @@ class RestaurantListViewController: UIViewController,
             height = estimatedHeight + 40
         }
         return height
+    }
+    
+    deinit {
+        switch DataService.shared.selectedImageLoadingFramework {
+        case ImageLoadingFramework.SDWebImage:
+            SDImageCache.shared().clearMemory()
+        case ImageLoadingFramework.Kingfisher:
+            KingfisherManager.shared.cache.clearDiskCache()
+            KingfisherManager.shared.cache.clearMemoryCache()
+        case ImageLoadingFramework.Nuke:
+            ImageCache.shared.removeAll()
+        default:
+            break
+        }
     }
     
     

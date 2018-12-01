@@ -28,6 +28,8 @@
 		B5B3029621B2CAB200519F42 /* RestaurantListTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5B3029521B2CAB200519F42 /* RestaurantListTableViewCell.swift */; };
 		B5B3029921B2CDD300519F42 /* Restaurant.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5B3029821B2CDD300519F42 /* Restaurant.swift */; };
 		B5B3029B21B2E4C500519F42 /* Place.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5B3029A21B2E4C500519F42 /* Place.swift */; };
+		B5B3029D21B2FCEC00519F42 /* Picture.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5B3029C21B2FCEC00519F42 /* Picture.swift */; };
+		B5B3029F21B310DE00519F42 /* LoadingIndicator.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5B3029E21B310DE00519F42 /* LoadingIndicator.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -61,6 +63,8 @@
 		B5B3029521B2CAB200519F42 /* RestaurantListTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestaurantListTableViewCell.swift; sourceTree = "<group>"; };
 		B5B3029821B2CDD300519F42 /* Restaurant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Restaurant.swift; sourceTree = "<group>"; };
 		B5B3029A21B2E4C500519F42 /* Place.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Place.swift; sourceTree = "<group>"; };
+		B5B3029C21B2FCEC00519F42 /* Picture.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Picture.swift; sourceTree = "<group>"; };
+		B5B3029E21B310DE00519F42 /* LoadingIndicator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoadingIndicator.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -185,6 +189,7 @@
 		B597091921B2B18200C12165 /* Helpers */ = {
 			isa = PBXGroup;
 			children = (
+				B5B3029E21B310DE00519F42 /* LoadingIndicator.swift */,
 				B597091A21B2B18D00C12165 /* Radio Button */,
 			);
 			path = Helpers;
@@ -239,6 +244,7 @@
 			children = (
 				B5B3029821B2CDD300519F42 /* Restaurant.swift */,
 				B5B3029A21B2E4C500519F42 /* Place.swift */,
+				B5B3029C21B2FCEC00519F42 /* Picture.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -381,6 +387,7 @@
 				B5B3029921B2CDD300519F42 /* Restaurant.swift in Sources */,
 				B59708ED21B29A5000C12165 /* MainViewController.swift in Sources */,
 				B5B3029621B2CAB200519F42 /* RestaurantListTableViewCell.swift in Sources */,
+				B5B3029D21B2FCEC00519F42 /* Picture.swift in Sources */,
 				B597091021B2A2FA00C12165 /* LocalizationExtension.swift in Sources */,
 				B597090621B29F4900C12165 /* StackViewExtension.swift in Sources */,
 				B5B3029B21B2E4C500519F42 /* Place.swift in Sources */,
@@ -390,6 +397,7 @@
 				B597092021B2B2EB00C12165 /* DLRadioButtonExtension.swift in Sources */,
 				B597090921B2A0EE00C12165 /* Constants.swift in Sources */,
 				B59708EB21B29A5000C12165 /* AppDelegate.swift in Sources */,
+				B5B3029F21B310DE00519F42 /* LoadingIndicator.swift in Sources */,
 				B597090421B29BBE00C12165 /* ColorExtension.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

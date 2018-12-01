@@ -79,13 +79,17 @@ class MainViewController: UIViewController {
     }
     
     @objc func showRestaurantList() {
+        LoadingIndicator.shared.start()
         DataService.shared.getProductList { (data, responseStatus, error) in
             if error == nil {
                 print("data: \(data)")
                 let restaurantListScreen = RestaurantListViewController()
                 restaurantListScreen.restaurantList = data
                 self.navigationController?.pushViewController(restaurantListScreen, animated: true)
+            } else {
+                self.showUnknownErrorMessage()
             }
+            LoadingIndicator.shared.stop()
             
         }
         

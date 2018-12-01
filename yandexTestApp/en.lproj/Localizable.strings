@@ -13,3 +13,6 @@
 "kingfisherTitle" = "Kingfisher";
 "nukeTitle" = "Nuke";
 "frameworkLabelText" = "Choose required framework:";
+"clearCacheButtonTitle" = "Clear cache";
+"errorTitle" = "Error";
+"unknownErrorMessage" = "Something went wrong.\nPlease try again.";
