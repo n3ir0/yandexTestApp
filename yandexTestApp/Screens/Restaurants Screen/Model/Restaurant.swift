@@ -9,17 +9,17 @@
 import Foundation
 
 struct Restaurant: Codable {
-    var name: String?
-    var description : String?
+    var place = Place()
+    
     
     enum CodingKeys: String, CodingKey {
-        case name = "name"
-        case description = "footerDescription"
+        case place = "place"
+        
     }
     
     mutating func decode(from decoder: Decoder) throws {
         let values = try decoder.container(keyedBy: CodingKeys.self)
-        name = try values.decodeIfPresent(String.self, forKey: .name)
-        description = try values.decodeIfPresent(String.self, forKey: .description)
+        place = (try values.decodeIfPresent(Place.self, forKey: .place))!
+        
     }
 }

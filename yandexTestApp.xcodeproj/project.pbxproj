@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B080A497DA93956BD3114BEE /* Pods_yandexTestApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5D116AE417D8287A2F58F28A /* Pods_yandexTestApp.framework */; };
 		B59708EB21B29A5000C12165 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B59708EA21B29A5000C12165 /* AppDelegate.swift */; };
 		B59708ED21B29A5000C12165 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B59708EC21B29A5000C12165 /* MainViewController.swift */; };
 		B59708F221B29A5200C12165 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B59708F121B29A5200C12165 /* Assets.xcassets */; };
@@ -26,9 +27,13 @@
 		B597092921B2C88900C12165 /* RestaurantListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B597092821B2C88900C12165 /* RestaurantListViewController.swift */; };
 		B5B3029621B2CAB200519F42 /* RestaurantListTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5B3029521B2CAB200519F42 /* RestaurantListTableViewCell.swift */; };
 		B5B3029921B2CDD300519F42 /* Restaurant.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5B3029821B2CDD300519F42 /* Restaurant.swift */; };
+		B5B3029B21B2E4C500519F42 /* Place.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5B3029A21B2E4C500519F42 /* Place.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		5D116AE417D8287A2F58F28A /* Pods_yandexTestApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_yandexTestApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		6BB14B4CFE4BE4002BB112DF /* Pods-yandexTestApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-yandexTestApp.debug.xcconfig"; path = "Pods/Target Support Files/Pods-yandexTestApp/Pods-yandexTestApp.debug.xcconfig"; sourceTree = "<group>"; };
+		A8A2C9CD5FB886A7A2AE011E /* Pods-yandexTestApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-yandexTestApp.release.xcconfig"; path = "Pods/Target Support Files/Pods-yandexTestApp/Pods-yandexTestApp.release.xcconfig"; sourceTree = "<group>"; };
 		B59708E721B29A5000C12165 /* yandexTestApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = yandexTestApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B59708EA21B29A5000C12165 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B59708EC21B29A5000C12165 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
@@ -55,6 +60,7 @@
 		B597092821B2C88900C12165 /* RestaurantListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestaurantListViewController.swift; sourceTree = "<group>"; };
 		B5B3029521B2CAB200519F42 /* RestaurantListTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestaurantListTableViewCell.swift; sourceTree = "<group>"; };
 		B5B3029821B2CDD300519F42 /* Restaurant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Restaurant.swift; sourceTree = "<group>"; };
+		B5B3029A21B2E4C500519F42 /* Place.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Place.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,17 +68,28 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B080A497DA93956BD3114BEE /* Pods_yandexTestApp.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		66FBA170C57E51A0956CF938 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				5D116AE417D8287A2F58F28A /* Pods_yandexTestApp.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		B59708DE21B29A5000C12165 = {
 			isa = PBXGroup;
 			children = (
 				B59708E921B29A5000C12165 /* yandexTestApp */,
 				B59708E821B29A5000C12165 /* Products */,
+				FEB217B37FAF6476FB90332C /* Pods */,
+				66FBA170C57E51A0956CF938 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -221,8 +238,18 @@
 			isa = PBXGroup;
 			children = (
 				B5B3029821B2CDD300519F42 /* Restaurant.swift */,
+				B5B3029A21B2E4C500519F42 /* Place.swift */,
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		FEB217B37FAF6476FB90332C /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				6BB14B4CFE4BE4002BB112DF /* Pods-yandexTestApp.debug.xcconfig */,
+				A8A2C9CD5FB886A7A2AE011E /* Pods-yandexTestApp.release.xcconfig */,
+			);
+			name = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -232,9 +259,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = B59708F921B29A5200C12165 /* Build configuration list for PBXNativeTarget "yandexTestApp" */;
 			buildPhases = (
+				09C58260C5DB25CF3BB7B1D9 /* [CP] Check Pods Manifest.lock */,
 				B59708E321B29A5000C12165 /* Sources */,
 				B59708E421B29A5000C12165 /* Frameworks */,
 				B59708E521B29A5000C12165 /* Resources */,
+				6C2F6AB5CF44DDC257F8C055 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -293,6 +322,53 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		09C58260C5DB25CF3BB7B1D9 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-yandexTestApp-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6C2F6AB5CF44DDC257F8C055 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-yandexTestApp/Pods-yandexTestApp-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/Kingfisher/Kingfisher.framework",
+				"${BUILT_PRODUCTS_DIR}/Nuke/Nuke.framework",
+				"${BUILT_PRODUCTS_DIR}/SDWebImage/SDWebImage.framework",
+				"${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Kingfisher.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Nuke.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SDWebImage.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyJSON.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-yandexTestApp/Pods-yandexTestApp-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		B59708E321B29A5000C12165 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -307,6 +383,7 @@
 				B5B3029621B2CAB200519F42 /* RestaurantListTableViewCell.swift in Sources */,
 				B597091021B2A2FA00C12165 /* LocalizationExtension.swift in Sources */,
 				B597090621B29F4900C12165 /* StackViewExtension.swift in Sources */,
+				B5B3029B21B2E4C500519F42 /* Place.swift in Sources */,
 				B597092221B2B56300C12165 /* UIViewExtension.swift in Sources */,
 				B597090E21B2A18000C12165 /* ParametersViewController.swift in Sources */,
 				B597092921B2C88900C12165 /* RestaurantListViewController.swift in Sources */,
@@ -460,6 +537,7 @@
 		};
 		B59708FA21B29A5200C12165 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6BB14B4CFE4BE4002BB112DF /* Pods-yandexTestApp.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
@@ -481,6 +559,7 @@
 		};
 		B59708FB21B29A5200C12165 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A8A2C9CD5FB886A7A2AE011E /* Pods-yandexTestApp.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
