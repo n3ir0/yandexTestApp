@@ -79,7 +79,8 @@ class MainViewController: UIViewController {
     }
     
     @objc func showRestaurantList() {
-        
+        let restaurantListScreen = RestaurantListViewController()
+        navigationController?.pushViewController(restaurantListScreen, animated: true)
     }
  
 }

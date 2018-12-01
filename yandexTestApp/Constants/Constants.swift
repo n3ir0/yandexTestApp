@@ -29,3 +29,8 @@ struct CheckBoxSize {
     static let width: CGFloat = 200
     static let height: CGFloat = 50
 }
+
+struct RestaurantListImageSize {
+    static let width: CGFloat = 100
+    static let height: CGFloat = 75
+}

@@ -13,6 +13,7 @@ class RestaurantListViewController: UIViewController,
                                     UITableViewDataSource {
     
     let restaurantListTableViewCellID = "restaurantListTableViewCellID"
+    var restaurantList = [Restaurant]()
     
     let restaurantListTableView: UITableView = {
         let tableView = UITableView()
@@ -35,12 +36,19 @@ class RestaurantListViewController: UIViewController,
         restaurantListTableView.pinToEdgesSafely(view: view)
     }
     
+    func numberOfSections(in tableView: UITableView) -> Int {
+        return 1
+    }
+    
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        <#code#>
+        //return restaurantList.count
+        return 1
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        <#code#>
+        let cell = tableView.dequeueReusableCell(withIdentifier: restaurantListTableViewCellID, for: indexPath) as! RestaurantListTableViewCell
+        
+        return cell
     }
     
     

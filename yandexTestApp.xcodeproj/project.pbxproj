@@ -25,6 +25,7 @@
 		B597092521B2B95500C12165 /* DataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = B597092421B2B95500C12165 /* DataService.swift */; };
 		B597092921B2C88900C12165 /* RestaurantListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B597092821B2C88900C12165 /* RestaurantListViewController.swift */; };
 		B5B3029621B2CAB200519F42 /* RestaurantListTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5B3029521B2CAB200519F42 /* RestaurantListTableViewCell.swift */; };
+		B5B3029921B2CDD300519F42 /* Restaurant.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5B3029821B2CDD300519F42 /* Restaurant.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -53,6 +54,7 @@
 		B597092421B2B95500C12165 /* DataService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataService.swift; sourceTree = "<group>"; };
 		B597092821B2C88900C12165 /* RestaurantListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestaurantListViewController.swift; sourceTree = "<group>"; };
 		B5B3029521B2CAB200519F42 /* RestaurantListTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestaurantListTableViewCell.swift; sourceTree = "<group>"; };
+		B5B3029821B2CDD300519F42 /* Restaurant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Restaurant.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -192,6 +194,7 @@
 		B597092621B2C70300C12165 /* Restaurants Screen */ = {
 			isa = PBXGroup;
 			children = (
+				B5B3029721B2CDBB00519F42 /* Model */,
 				B5B3029421B2CA7C00519F42 /* View */,
 				B597092721B2C71A00C12165 /* Controller */,
 			);
@@ -212,6 +215,14 @@
 				B5B3029521B2CAB200519F42 /* RestaurantListTableViewCell.swift */,
 			);
 			path = View;
+			sourceTree = "<group>";
+		};
+		B5B3029721B2CDBB00519F42 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				B5B3029821B2CDD300519F42 /* Restaurant.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -291,6 +302,7 @@
 				B597092521B2B95500C12165 /* DataService.swift in Sources */,
 				B597091E21B2B1A300C12165 /* DLRadioButton.m in Sources */,
 				B597090021B29B7E00C12165 /* LayoutExtension.swift in Sources */,
+				B5B3029921B2CDD300519F42 /* Restaurant.swift in Sources */,
 				B59708ED21B29A5000C12165 /* MainViewController.swift in Sources */,
 				B5B3029621B2CAB200519F42 /* RestaurantListTableViewCell.swift in Sources */,
 				B597091021B2A2FA00C12165 /* LocalizationExtension.swift in Sources */,
