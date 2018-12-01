@@ -23,6 +23,8 @@
 		B597092021B2B2EB00C12165 /* DLRadioButtonExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = B597091F21B2B2EB00C12165 /* DLRadioButtonExtension.swift */; };
 		B597092221B2B56300C12165 /* UIViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = B597092121B2B56300C12165 /* UIViewExtension.swift */; };
 		B597092521B2B95500C12165 /* DataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = B597092421B2B95500C12165 /* DataService.swift */; };
+		B597092921B2C88900C12165 /* RestaurantListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B597092821B2C88900C12165 /* RestaurantListViewController.swift */; };
+		B5B3029621B2CAB200519F42 /* RestaurantListTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5B3029521B2CAB200519F42 /* RestaurantListTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -49,6 +51,8 @@
 		B597091F21B2B2EB00C12165 /* DLRadioButtonExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DLRadioButtonExtension.swift; sourceTree = "<group>"; };
 		B597092121B2B56300C12165 /* UIViewExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIViewExtension.swift; sourceTree = "<group>"; };
 		B597092421B2B95500C12165 /* DataService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataService.swift; sourceTree = "<group>"; };
+		B597092821B2C88900C12165 /* RestaurantListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestaurantListViewController.swift; sourceTree = "<group>"; };
+		B5B3029521B2CAB200519F42 /* RestaurantListTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestaurantListTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -136,6 +140,7 @@
 		B597090A21B2A14F00C12165 /* Screens */ = {
 			isa = PBXGroup;
 			children = (
+				B597092621B2C70300C12165 /* Restaurants Screen */,
 				B597090B21B2A15B00C12165 /* Parameters Screen */,
 				B59708FC21B29A7600C12165 /* Main Screen */,
 			);
@@ -182,6 +187,31 @@
 				B597092421B2B95500C12165 /* DataService.swift */,
 			);
 			path = Services;
+			sourceTree = "<group>";
+		};
+		B597092621B2C70300C12165 /* Restaurants Screen */ = {
+			isa = PBXGroup;
+			children = (
+				B5B3029421B2CA7C00519F42 /* View */,
+				B597092721B2C71A00C12165 /* Controller */,
+			);
+			path = "Restaurants Screen";
+			sourceTree = "<group>";
+		};
+		B597092721B2C71A00C12165 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				B597092821B2C88900C12165 /* RestaurantListViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		B5B3029421B2CA7C00519F42 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				B5B3029521B2CAB200519F42 /* RestaurantListTableViewCell.swift */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -262,10 +292,12 @@
 				B597091E21B2B1A300C12165 /* DLRadioButton.m in Sources */,
 				B597090021B29B7E00C12165 /* LayoutExtension.swift in Sources */,
 				B59708ED21B29A5000C12165 /* MainViewController.swift in Sources */,
+				B5B3029621B2CAB200519F42 /* RestaurantListTableViewCell.swift in Sources */,
 				B597091021B2A2FA00C12165 /* LocalizationExtension.swift in Sources */,
 				B597090621B29F4900C12165 /* StackViewExtension.swift in Sources */,
 				B597092221B2B56300C12165 /* UIViewExtension.swift in Sources */,
 				B597090E21B2A18000C12165 /* ParametersViewController.swift in Sources */,
+				B597092921B2C88900C12165 /* RestaurantListViewController.swift in Sources */,
 				B597092021B2B2EB00C12165 /* DLRadioButtonExtension.swift in Sources */,
 				B597090921B2A0EE00C12165 /* Constants.swift in Sources */,
 				B59708EB21B29A5000C12165 /* AppDelegate.swift in Sources */,
