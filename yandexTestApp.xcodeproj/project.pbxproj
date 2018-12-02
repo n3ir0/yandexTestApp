@@ -30,6 +30,7 @@
 		B5B3029B21B2E4C500519F42 /* Place.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5B3029A21B2E4C500519F42 /* Place.swift */; };
 		B5B3029D21B2FCEC00519F42 /* Picture.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5B3029C21B2FCEC00519F42 /* Picture.swift */; };
 		B5B3029F21B310DE00519F42 /* LoadingIndicator.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5B3029E21B310DE00519F42 /* LoadingIndicator.swift */; };
+		B5B302A121B4062300519F42 /* UIImageViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5B302A021B4062300519F42 /* UIImageViewExtension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -65,6 +66,7 @@
 		B5B3029A21B2E4C500519F42 /* Place.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Place.swift; sourceTree = "<group>"; };
 		B5B3029C21B2FCEC00519F42 /* Picture.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Picture.swift; sourceTree = "<group>"; };
 		B5B3029E21B310DE00519F42 /* LoadingIndicator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoadingIndicator.swift; sourceTree = "<group>"; };
+		B5B302A021B4062300519F42 /* UIImageViewExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIImageViewExtension.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -148,6 +150,7 @@
 				B597090521B29F4900C12165 /* StackViewExtension.swift */,
 				B597091F21B2B2EB00C12165 /* DLRadioButtonExtension.swift */,
 				B597092121B2B56300C12165 /* UIViewExtension.swift */,
+				B5B302A021B4062300519F42 /* UIImageViewExtension.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -390,6 +393,7 @@
 				B5B3029D21B2FCEC00519F42 /* Picture.swift in Sources */,
 				B597091021B2A2FA00C12165 /* LocalizationExtension.swift in Sources */,
 				B597090621B29F4900C12165 /* StackViewExtension.swift in Sources */,
+				B5B302A121B4062300519F42 /* UIImageViewExtension.swift in Sources */,
 				B5B3029B21B2E4C500519F42 /* Place.swift in Sources */,
 				B597092221B2B56300C12165 /* UIViewExtension.swift in Sources */,
 				B597090E21B2A18000C12165 /* ParametersViewController.swift in Sources */,

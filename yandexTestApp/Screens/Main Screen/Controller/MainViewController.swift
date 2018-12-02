@@ -82,13 +82,16 @@ class MainViewController: UIViewController {
         LoadingIndicator.shared.start()
         DataService.shared.getProductList { (data, responseStatus, error) in
             if error == nil {
-                print("data: \(data)")
                 let restaurantListScreen = RestaurantListViewController()
                 restaurantListScreen.restaurantList = data
+                for (index, element) in data.enumerated() {
+                    restaurantListScreen.restaurantList[index].place.picture.uri = DataService.shared.makeImageUrl(urlToFix: element.place.picture.uri ?? "")
+                }
                 self.navigationController?.pushViewController(restaurantListScreen, animated: true)
             } else {
                 self.showUnknownErrorMessage()
             }
+            
             LoadingIndicator.shared.stop()
             
         }

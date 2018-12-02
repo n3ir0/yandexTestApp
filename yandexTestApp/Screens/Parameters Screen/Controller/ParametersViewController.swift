@@ -7,9 +7,6 @@
 //
 
 import UIKit
-import SDWebImage
-import Kingfisher
-import Nuke
 
 class ParametersViewController: UIViewController {
     
@@ -86,10 +83,7 @@ class ParametersViewController: UIViewController {
     }
     
     @objc func clearCache() {
-        SDImageCache.shared().clearMemory()
-        KingfisherManager.shared.cache.clearDiskCache()
-        KingfisherManager.shared.cache.clearMemoryCache()
-        ImageCache.shared.removeAll()
+        DataService.shared.clearCache()
     }
 
 }

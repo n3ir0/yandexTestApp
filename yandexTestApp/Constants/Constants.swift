@@ -34,3 +34,12 @@ struct RestaurantListImageSize {
     static let width: CGFloat = 100
     static let height: CGFloat = 75
 }
+
+struct RestaurantListCellSize {
+    static let generalHeight: CGFloat = RestaurantListImageSize.height + 20
+}
+
+struct Location {
+    static let latitude: Double = 55.762885
+    static let longitude: Double = 37.597360
+}

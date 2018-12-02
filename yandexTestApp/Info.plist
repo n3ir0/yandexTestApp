@@ -4,8 +4,10 @@
 <dict>
 	<key>EndPoints</key>
 	<dict>
+		<key>urlPrefix</key>
+		<string>https://eda.yandex</string>
 		<key>getRestaurants</key>
-		<string>https://eda.yandex/api/v2/catalog?latitude=55.762885&amp;longitude=37.597360</string>
+		<string>/api/v2/catalog?latitude=%@&amp;longitude=%@</string>
 	</dict>
 	<key>CFBundleDevelopmentRegion</key>
 	<string>$(DEVELOPMENT_LANGUAGE)</string>

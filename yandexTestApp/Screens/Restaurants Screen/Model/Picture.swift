@@ -9,14 +9,14 @@
 import Foundation
 
 struct Picture: Codable {
-    var url: String?
+    var uri: String?
     
     enum CodingKeys: String, CodingKey {
-        case url = "uri"
+        case uri = "uri"
     }
     
     mutating func decode(from decoder: Decoder) throws {
         let values = try decoder.container(keyedBy: CodingKeys.self)
-        url = try values.decodeIfPresent(String.self, forKey: .url)
+        uri = try values.decodeIfPresent(String.self, forKey: .uri)
     }
 }

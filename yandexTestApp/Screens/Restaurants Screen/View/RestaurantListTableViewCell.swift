@@ -46,13 +46,13 @@ class RestaurantListTableViewCell: UITableViewCell {
     
     func setupCell() {
         addSubview(restaurantImageView)
-        restaurantImageView.anchor(top: topAnchor, left: leftAnchor, bottom: nil, right: nil, paddingTop: 5, paddingLeft: 5, paddingBottom: 0, paddingRight: 0)
+        restaurantImageView.anchor(top: topAnchor, left: leftAnchor, bottom: nil, right: nil, paddingTop: 10, paddingLeft: 5, paddingBottom: 0, paddingRight: 0)
         
         addSubview(restaurantNameLabel)
-        restaurantNameLabel.anchor(top: topAnchor, left: restaurantImageView.rightAnchor, bottom: nil, right: rightAnchor, paddingTop: 5, paddingLeft: 5, paddingBottom: 0, paddingRight: 5)
+        restaurantNameLabel.anchor(top: topAnchor, left: restaurantImageView.rightAnchor, bottom: nil, right: nil, paddingTop: 5, paddingLeft: 5, paddingBottom: 0, paddingRight: 0)
         
         addSubview(restaurantDescriptionLabel)
-        restaurantDescriptionLabel.anchor(top: restaurantNameLabel.bottomAnchor, left: restaurantImageView.rightAnchor, bottom: bottomAnchor, right: rightAnchor, paddingTop: 5, paddingLeft: 5, paddingBottom: 0, paddingRight: 5)
+        restaurantDescriptionLabel.anchor(top: restaurantNameLabel.bottomAnchor, left: restaurantImageView.rightAnchor, bottom: bottomAnchor, right: rightAnchor, paddingTop: 5, paddingLeft: 5, paddingBottom: 10, paddingRight: 5)
     }
     
     required init?(coder aDecoder: NSCoder) {

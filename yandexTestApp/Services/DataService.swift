@@ -9,6 +9,9 @@
 import Foundation
 import Alamofire
 import SwiftyJSON
+import SDWebImage
+import Kingfisher
+import Nuke
 
 class DataService {
     static let shared = DataService()
@@ -19,7 +22,9 @@ class DataService {
     var selectedImageLoadingFramework = ImageLoadingFramework.SDWebImage
     
     func getProductList(completionHandler: @escaping (_ data: [Restaurant], _ responseStatus:  Int?, _ error: Error?) ->()) {
-        guard let url = urlDict["getRestaurants"] else {return}
+        guard let urlPrefix = urlDict["urlPrefix"], let restaurantUrl = urlDict["getRestaurants"] else {return}
+        let restaurantUrlWithLocation = String(format: restaurantUrl, "\(Location.latitude)", "\(Location.longitude)")
+        let url = urlPrefix + restaurantUrlWithLocation
         var data = [Restaurant]()
         var jsonData = JSON()
         var rawData = Data()
@@ -29,8 +34,6 @@ class DataService {
             switch response.result {
             case .success:
                 jsonData = JSON(response.result.value ?? JSON())
-                //print("jsonData: \(jsonData)")
-                print(jsonData["payload"]["foundPlaces"])
                 do {
                     rawData = try jsonData["payload"]["foundPlaces"].rawData()
                 } catch (let error) {
@@ -48,5 +51,19 @@ class DataService {
             }
             completionHandler(data, responseStatus, response.result.error)
         }
+    }
+    
+    func makeImageUrl(urlToFix: String) -> String {
+        guard let urlPrefix = urlDict["urlPrefix"] else {return ""}
+        let imageUrl = urlToFix.replacingOccurrences(of: "{w}x{h}", with: "\(Int(RestaurantListImageSize.width))x\(Int(RestaurantListImageSize.height))")
+        return urlPrefix + imageUrl
+    }
+    
+    func clearCache() {
+        SDImageCache.shared().clearMemory()
+        SDImageCache.shared().clearDisk()
+        KingfisherManager.shared.cache.clearDiskCache()
+        KingfisherManager.shared.cache.clearMemoryCache()
+        ImageCache.shared.removeAll()
     }
 }
