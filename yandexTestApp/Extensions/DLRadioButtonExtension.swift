@@ -11,7 +11,6 @@ import Foundation
 extension DLRadioButton {
     convenience init(title: String?) {
         self.init()
-        self.isIconSquare = true
         self.setTitleColor(.radioButtonTextColor, for: .normal)
         self.titleLabel?.font = UIFont.systemFont(ofSize: FontSize.S)
         self.setTitle(NSLocalizedString(title ?? "", comment: ""), for: .normal)
