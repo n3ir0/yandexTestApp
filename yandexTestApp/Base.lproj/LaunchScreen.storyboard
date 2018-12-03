@@ -19,7 +19,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="zuy-Fb-Kpr">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="edaLogo" translatesAutoresizingMaskIntoConstraints="NO" id="zuy-Fb-Kpr">
                                 <rect key="frame" x="112" y="258" width="150" height="150"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="zuy-Fb-Kpr" secondAttribute="height" multiplier="1:1" id="gpJ-cq-geK"/>
@@ -40,4 +40,7 @@
             <point key="canvasLocation" x="53" y="375"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="edaLogo" width="250" height="250"/>
+    </resources>
 </document>
